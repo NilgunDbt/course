@@ -1,0 +1,56 @@
+[0m17:21:36.329889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8F25E180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8B921C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8F25E060>]}
+
+
+============================== 17:21:36.341532 | 7a0d1d36-6558-4790-9325-92dd462eff76 ==============================
+[0m17:21:36.341532 [info ] [MainThread]: Running with dbt=1.11.7
+[0m17:21:36.345252 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ntasdele\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init --skip-profile-setup airbnb', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m17:21:36.659160 [debug] [MainThread]: Starter project path: C:\Users\ntasdele\Documents\course\.venv\Lib\site-packages\dbt\include\starter_project
+[0m17:21:36.704299 [info ] [MainThread]: 
+Your new dbt project "airbnb" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:21:36.705632 [debug] [MainThread]: Command `dbt init` succeeded at 17:21:36.705632 after 0.73 seconds
+[0m17:21:36.706637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8F506E70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8F25E180>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B8F25E060>]}
+[0m17:21:36.706637 [debug] [MainThread]: Flushing usage events
+[0m17:21:37.437169 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:34:36.672434 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1F9D07D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA233306E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA2329F740>]}
+
+
+============================== 11:34:36.681457 | 215ebadf-2bb9-45bf-98c5-bab55ee60253 ==============================
+[0m11:34:36.681457 [info ] [MainThread]: Running with dbt=1.11.7
+[0m11:34:36.684464 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\ntasdele\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m11:34:36.685464 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\ntasdele\Documents\course\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m11:34:36.687717 [debug] [MainThread]: Command `dbt run` failed at 11:34:36.687717 after 0.34 seconds
+[0m11:34:36.687717 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA1F9D07D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA239BBC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA239306B0>]}
+[0m11:34:36.688737 [debug] [MainThread]: Flushing usage events
+[0m11:34:37.323601 [debug] [MainThread]: An error was encountered while trying to flush usage events
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:19.009610Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ntasdele\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:19.009641Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:19.047936Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"debug","msg":"Requesting trial license from https://cloud.getdbt.com/api/private/trial-licenses/","name":"Generic","pid":292,"thread":"main","ts":"2026-08-20T18:25:20.424933Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"debug","msg":"Trial license retrieved","name":"Generic","pid":292,"thread":"main","ts":"2026-08-20T18:25:20.758648Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"debug","msg":"Trial license from trial license server is expired","name":"Generic","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:20.761927Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-04-24T14:46:52+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-04-24T14:46:52+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:20.762511Z"}}
+{"data":{"completed_at":"2026-08-20T18:25:20.799142Z","elapsed":1.7896991968154907,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a0206b-9e92-7fe2-92fd-26fa383c668c","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [1.8s]","name":"CommandCompleted","pid":292,"thread":"tokio-rt-worker","ts":"2026-08-20T18:25:20.799341Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.205"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.205","name":"MainReportVersion","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:08.930385Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ntasdele\\.local\\bin\\dbt.exe license info --json --log-format json","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"debug","msg":"running dbt-fusion with arguments {\"command\":\"license\",\"vars\":\"{}\",\"limit\":\"10\",\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false,\"manage_state\":false}","name":"MainReportArgs","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:08.930882Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"debug","msg":"No platform credentials found, skipping remote license","name":"Generic","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:09.772301Z"}}
+{"data":{},"info":{"category":"","code":"","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"debug","msg":"Trial license from file C:\\Users\\ntasdele\\.dbt\\license.trial is expired","name":"Generic","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:09.800586Z"}}
+{"data":{"columns":[],"is_inline":true,"node_name":"license_info","output_format":"json","preview":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-04-24T14:46:52+00:00\",\n  \"license_type\": \"trial\"\n}","unique_id":"license.info"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"info","msg":"{\n  \"status\": \"trial_expired\",\n  \"licensing_enabled\": true,\n  \"expires_at\": \"2026-04-24T14:46:52+00:00\",\n  \"license_type\": \"trial\"\n}","name":"ShowNode","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:09.802144Z"}}
+{"data":{"completed_at":"2026-08-22T20:59:11.217173Z","elapsed":2.488600730895996,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"01a02b45-2ba3-7402-811c-60a5951cabb4","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'license' successfully [2.5s]","name":"CommandCompleted","pid":21296,"thread":"tokio-rt-worker","ts":"2026-08-22T20:59:11.217562Z"}}
